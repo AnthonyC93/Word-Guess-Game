@@ -6,7 +6,7 @@
 //make var losses
 var wins=0;
 var losses=0;
-var wordsToGuess = ["the dark knight", "the prestige", "inception","interstellar"];
+var wordsToGuess = ["the dark knight", "the prestige", "inception","interstellar","guardians of the galaxy", "avengers infinity war", "blade runner 2048", "superbad","finding nemo","blackkklansman"];
 var newIndexCounter=0;
 var wordsPlayed = [];
 
