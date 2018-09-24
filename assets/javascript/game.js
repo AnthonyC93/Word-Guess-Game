@@ -195,7 +195,7 @@ function endGame(){
   $("#cardBody").hide();
   $("body").css("background-image","none");
 
-    $("#endOfGameMessage").html("Thanks for playing!<br> I'm out of words for you to guess so maybe stop being so good at this you inconsiderate piece of shit I mean who has the time to think of random words all fucking day lol jk ily thanks again have a great day");
+    $("#endOfGameMessage").html("Thanks for playing!<br> I'm out of words for you to guess so maybe stop being so good at this");
 
     window.stop();
 }
