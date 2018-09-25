@@ -6,7 +6,7 @@
 //make var losses
 var wins=0;
 var losses=0;
-var wordsToGuess = ["the dark knight", "the prestige", "inception","interstellar"];
+var wordsToGuess = ["avengers  infinity  war", "sorry  to  bother  you","ant  man  and  the  wasp", "mission  impossible  fallout","blackkklansman", "black  panther", "annihilation", "a  quiet  place","the  incredibles"];
 var newIndexCounter=0;
 var wordsPlayed = [];
 
@@ -101,7 +101,7 @@ guessesLeft = 9;
 function showRecords() {
   $("#wins").html("Wins: <br>" + wins);
   $("#losses").html("Losses: <br>" + losses);
-  $("#lettersGuessed").html("Letters Guessed: <br>"+ niceList(incorrectGuesses));
+  $("#lettersGuessed").html("Letters Guessed: <br>"+" "+ niceList(incorrectGuesses));
   $("#guessesLeft").html("Guesses Remaining: <br>" + guessesLeft);
 }
 function startListen() {
@@ -169,33 +169,61 @@ function changePic(winOrLoss){
     if(winOrLoss==="loss"){
         $("body").css("background-image","url(assets/images/loss.jpg)");
         $("body").css("background-size","cover")
-        $("body").css("background-repeat","no-repeat")
+        //$("body").css("background-repeat","no-repeat")
     }else{
-        if(winOrLoss==="the dark knight rises"){
-            $("body").css("background-image","url(assets/images/darkKnightRises.jpg)");
+        if(winOrLoss==="sorry  to  bother  you"){
+            $("body").css("background-image","url(assets/images/sorry.jpg)");
             $("body").css("background-size","cover")
-            $("body").css("background-repeat","no-repeat")
-        }else 
-        if(winOrLoss==="inception"){
-          $("body").css("background-image","url(assets/images/inception.jpg)");
+           // $("body").css("background-repeat","no-repeat")
+        } 
+        if(winOrLoss==="avengers  infinity  war"){
+          $("body").css("background-image","url(assets/images/avengers.jpg)");
           $("body").css("background-size","cover")
-          $("body").css("background-repeat","no-repeat")
+          // $("body").css("background-repeat","no-repeat")
+        } 
+        if(winOrLoss==="ant  man  and  the  wasp"){
+          $("body").css("background-image","url(assets/images/antMan.jpg)");
+          $("body").css("background-size","cover")
+          // $("body").css("background-repeat","no-repeat")
+        } 
+        if(winOrLoss==="mission  impossible  fallout"){
+          $("body").css("background-image","url(assets/images/mission.jpg)");
+          $("body").css("background-size","cover")
+          // $("body").css("background-repeat","no-repeat")
+        } 
+        if(winOrLoss==="blackkklansman"){
+          $("body").css("background-image","url(assets/images/blackkk.jpg)");
+          $("body").css("background-size","cover")
+          // $("body").css("background-repeat","no-repeat")
+        } 
+        if(winOrLoss==="black  panther"){
+          $("body").css("background-image","url(assets/images/panther.jpg)");
+          $("body").css("background-size","cover")
+          // $("body").css("background-repeat","no-repeat")
+        } 
+        if(winOrLoss==="annihilation"){
+          $("body").css("background-image","url(assets/images/annihilation.jpg)");
+          $("body").css("background-size","cover")
+          // $("body").css("background-repeat","no-repeat")
+        } 
+        if(winOrLoss==="a  quiet  place"){
+          $("body").css("background-image","url(assets/images/quiet.jpg)");
+          $("body").css("background-size","cover")
+          // $("body").css("background-repeat","no-repeat")
+        } 
+        if(winOrLoss==="the  incredibles"){
+          $("body").css("background-image","url(assets/images/incredible.jpg)");
+          $("body").css("background-size","cover")
+          // $("body").css("background-repeat","no-repeat")
         }
         
     }
 }
 function endGame(){
-    // $("#pressKey").hide();
-    // $("#wins").hide();
-    // $("#losses").hide();
-    // $("#guessesLeft").hide();
-    // $("#lettersGuessed").hide();
-    // $("#wordToPlay").hide();
-    // $("#gameTitle").hide();
   $("#cardBody").hide();
   $("body").css("background-image","none");
 
-    $("#endOfGameMessage").html("Thanks for playing!<br> I'm out of words for you to guess so maybe stop being so good at this you inconsiderate piece of shit I mean who has the time to think of random words all fucking day lol jk ily thanks again have a great day");
+    $("#endOfGameMessage").html("thanks for playing.<br><br>I'm out of words for you to guess.<br><br>...");
 
     window.stop();
 }
